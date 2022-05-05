@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Keiron Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Desarrollará una sencilla webapp usando React y el API de pokemon PokeApi.
 
-In the project directory, you can run:
+Debe crear cards o tarjetas para
+cada pokémon, la elección de colores y demás elementos de la interfaz es de libre elección. Sin
+embargo, dejamos este ejemplo: PokeAppUITest.
+La app debe tener las siguientes características:
 
-### `npm start`
+● Debe tener un listado de pokémon, donde debe aparecer al menos su foto, nombre,
+número y tipo (o tipos).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+● Deben aparecer los 25 primeros pokemon (para tener la info detallada de cada uno,
+tendremos que hacer una petición al servidor y recordad que hay un límite).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+● Los pokémon deben poder filtrarse por nombre.
 
-### `npm test`
+● En el listado principal debe aparecer, si el pokémon es una evolución de otro, de cuál
+proviene.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+● Al clickar sobre la tarjeta de un pokemon, debe aparecer una pantalla de detalle con más
+información detallada de ese pokemon. Colocar información relevante, proponemos
+usar: altura, peso, habilidades, imágenes del pokemon y sus evoluciones.
 
-### `npm run build`
+● Usar algún tipo de transición a su elección al mostrar/ocultar el componente de detalle
+de pokemon (Fade In, Grow, etc).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+● Utilizar flexbox o css grid (puede combinarlos ambos) para realizar el maquetado.
+(OBLIGATORIO, no usar bootstrap 4 para la maqueta).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+● El código debe ser legible, parametrizable.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+● Proponga la combinación de colores de su aplicación (la imagen es referencial).
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Ejecición de manera local
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Correr npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Iniciar la aplicacion
+```bash 
+npm run start
+```
